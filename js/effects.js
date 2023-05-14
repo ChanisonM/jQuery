@@ -31,24 +31,6 @@ $('#btn9').click(function () {
 $('#btn10').click(function () {
     $('#img1').stop()
   })
-
-$('#btn11').hover(func_1 , func_2)
-function func_1() {
-    $('#img1').animate({
-        left:'250px' ,
-        opacity : '1',
-        height : '400px',
-        width : '400px'
-    },2000)
-  }
-
-  function func_2() {
-    $('#img1').animate({
-        left:'0px' ,
-        opacity : '0.4',
-        height : '250px',
-        width : '250px'
-    },2000)
-    }
-
-
+$('#btn11').click(function () { 
+    $('#img1').slideUp(2000).css('opacity' , '1').slideDown(1000).fadeOut(2000).fadeIn(2000)
+ })
