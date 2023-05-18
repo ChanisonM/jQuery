@@ -11,6 +11,7 @@ $( "#datepicker" ).datepicker({
 
 $('#tool').tooltip({
     track : true,
+    content : "This is the place for Name" ,
     show : {
         effect : "slideDown" ,
         delay : 100
